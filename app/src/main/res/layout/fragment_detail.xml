@@ -1,0 +1,357 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mensa.homecare.customer.ui.fragmentVisit.detail.DetailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <Button
+                style="@style/ButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:text="@string/bt_cancel" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:text="@string/bt_help"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/svDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/llButtons">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/tvTitleInfo"
+                    style="@style/TitleTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_visit_info" />
+
+                <TextView
+                    android:id="@+id/tvVisitDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTitleInfo"
+                    android:text="@string/msg_visdat" />
+
+                <TextView
+                    android:id="@+id/tvVisitDateValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTitleInfo"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/msg_visdat" />
+
+                <TextView
+                    android:id="@+id/tvVisitTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvVisitDate"
+                    android:text="@string/msg_vistim" />
+
+                <TextView
+                    android:id="@+id/tvVisitTimeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvVisitDate"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/msg_vistim" />
+
+                <TextView
+                    android:id="@+id/tvVisitStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvVisitTime"
+                    android:text="@string/msg_status_request" />
+
+                <TextView
+                    android:id="@+id/tvVisitStatusValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvVisitTime"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/msg_status_request" />
+
+                <include
+                    android:id="@+id/viewLine"
+                    layout="@layout/line_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tvVisitStatusValue"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp" />
+
+                <TextView
+                    android:id="@+id/tvPatientInfo"
+                    style="@style/TitleTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/viewLine"
+                    android:text="@string/msg_personal_info" />
+
+                <TextView
+                    android:id="@+id/tvFullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPatientInfo"
+                    android:text="@string/msg_personal_fullname"
+                    android:textSize="@dimen/_12sdp" />
+
+                <EditText
+                    android:id="@+id/etFullName"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvFullName"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:minHeight="@dimen/_30sdp"
+                    android:textIsSelectable="false" />
+
+                <TextView
+                    android:id="@+id/tvBirthdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etFullName"
+                    android:text="@string/msg_personal_birthdate"
+                    android:textSize="@dimen/_12sdp" />
+
+                <EditText
+                    android:id="@+id/etBirthdate"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvBirthdate"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textIsSelectable="false" />
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etBirthdate"
+                    android:text="@string/msg_personal_gender"
+                    android:textSize="@dimen/_12sdp" />
+
+                <RadioGroup
+                    android:id="@+id/rgGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvGender"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/rbMale"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:enabled="false"
+                        android:text="@string/msg_personal_gender_m"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFemale"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:enabled="false"
+                        android:text="@string/msg_personal_gender_f"
+                        android:textSize="@dimen/_14sdp" />
+                </RadioGroup>
+
+                <include
+                    android:id="@+id/viewLine2"
+                    layout="@layout/line_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/rgGender"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/viewLine2"
+                    android:text="@string/msg_personal_address"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAddressValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAddress" />
+
+                <TextView
+                    android:id="@+id/tvAddressNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAddressValue"
+                    android:text="@string/msg_personal_address_note"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/tvAddressNoteAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAddressNote"
+                    android:text="@string/msg_personal_address_note_add"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_10sdp" />
+
+                <View
+                    android:id="@+id/vLine2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tvAddressNoteAdd"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:background="@color/colorDivider" />
+
+                <TextView
+                    android:id="@+id/tvMedicalPersonel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vLine2"
+                    android:text="@string/msg_personal_doctor"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/rlMedicalData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMedicalPersonel"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivDoctor"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_weight="3"
+                        android:src="@drawable/ic_doc_placeholder" />
+
+                    <TextView
+                        android:id="@+id/tvDoctorName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivDoctor"
+                        android:text="dr.Homecare"
+                        android:textColor="@color/colorText" />
+
+                    <TextView
+                        android:id="@+id/tvDoctorSpesialis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvDoctorName"
+                        android:layout_toRightOf="@id/ivDoctor"
+                        android:text="Spesialis Homecare"
+                        android:textColor="@color/colorPrimaryDark" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/vLine4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/rlMedicalData"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:background="@color/colorDivider" />
+
+                <View
+                    android:id="@+id/vLine4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/rlMedicalData"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:background="@color/colorDivider" />
+
+                <TextView
+                    android:id="@+id/tvPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vLine4"
+                    android:text="@string/msg_personal_payment"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPaymentMethod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPayment"
+                    android:text="@string/msg_personal_payment_method"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/tvPaymentMethodValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPayment"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/msg_personal_payment_method_direct"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPaymentTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPaymentMethod"
+                    android:text="@string/msg_personal_payment_total"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/tvPaymentTotalValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPaymentMethod"
+                    android:layout_alignParentRight="true"
+                    android:text="Rp 0"
+                    android:textColor="@color/colorTextAccent"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</FrameLayout>

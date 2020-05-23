@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccentLight">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/_212sdp"
+        android:layout_height="@dimen/_212sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_app_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivIcon"
+        android:gravity="center"
+        android:text="Home Care"
+        android:textColor="@color/colorTextInput"
+        android:textSize="@dimen/_26ssp" />
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="@string/splash_version"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/_12ssp"
+        tools:text="@string/splash_version" />
+</RelativeLayout>

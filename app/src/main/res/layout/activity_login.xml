@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.login.LoginActivity">
+
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="2"
+        android:text="@string/msg_login_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="bottom|center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvMessage">
+
+        <ImageView
+            android:id="@+id/ivCountryFlag"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_flag_id"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tvCountryCode"
+            app:layout_constraintTop_toBottomOf="@id/tvMessage" />
+
+        <TextView
+            android:id="@+id/tvCountryCode"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:text="@string/country_code_indonesia"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintLeft_toRightOf="@id/ivCountryFlag"
+            app:layout_constraintRight_toLeftOf="@id/etPhone"
+            app:layout_constraintTop_toBottomOf="@id/tvMessage" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="match_parent"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="14"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintLeft_toRightOf="@id/tvCountryCode"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMessage" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btVerify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/msg_verify"
+        android:textColor="@color/colorAccentedText"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HomecareCustomer</string>
+
+
+    <!-- messages -->
+    <string name="msg_login_info">Kami perlu memverifikasi nomor telepon Anda untuk mendapatkan layanan ini</string>
+    <string name="msg_input_phone">NOMOR TELEPON</string>
+    <string name="msg_verify">Verifikasi</string>
+    <string name="msg_otp_info">Mohon masukan 6 digit kode aktivasi yang dikirim melalui SMS ke %1s</string>
+    <string name="msg_otp_wait_confirm">Menunggu Konfirmasi</string>
+    <string name="msg_otp_change_number">Apakah anda ingin mengubah nomor telepon?</string>
+    <string name="msg_otp_resend">Kirim Ulang Konfirmasi</string>
+    <string name="msg_resubmit">Kirim ulang dalam %02d:%02d</string>
+    <string name="msg_expired">Session telah habis \n Tolong Login ulang</string>
+    <string name="msg_morning">Selamat Pagi,</string>
+    <string name="msg_profile">Profil</string>
+    <string name="msg_afternoon">Selamat Siang,</string>
+    <string name="msg_evening">Selamat Sore,</string>
+    <string name="msg_night">Selamat Malam,</string>
+    <string name="msg_greeting">Silahkan pilih tanggal dan jam kunjungan petugas medis ke rumah anda</string>
+    <string name="msg_visdat">Tanggal Kunjungan</string>
+    <string name="msg_vistim">Jam Kunjungan</string>
+    <string name="msg_hint_date">Pilih Tanggal</string>
+    <string name="msg_hint_time">Pilih Jam</string>
+    <string name="msg_find_doctor">Cari Dokter</string>
+    <string name="msg_hint_src_doctor">Tulis nama dokter disini</string>
+    <string name="msg_list_available_doctor">Daftar dokter yang tersedia</string>
+    <string name="msg_search_desc">Berdasarkan tangan dan jam yang anda pilih</string>
+    <string name="msg_pop_doctor_title">Detail Informasi Dokter</string>
+    <string name="msg_pop_doctor_sympton">Keluhan yang ditangani :</string>
+    <string name="msg_pop_doctor_request">Ajukkan Permintaan Kunjungan</string>
+    <string name="msg_personal_info">Data Diri</string>
+    <string name="msg_personal_fullname">Nama Lengkap</string>
+    <string name="msg_personal_birthdate">Tanggal Lahir</string>
+    <string name="msg_personal_gender">Jenis Kelamin</string>
+    <string name="msg_personal_gender_m">Pria</string>
+    <string name="msg_personal_gender_f">Wanita</string>
+    <string name="msg_personal_address">Data Alamat</string>
+    <string name="msg_personal_address_note">Catatan Tambahan</string>
+    <string name="msg_personal_address_note_add">Tambahkan catatan untuk alamat</string>
+    <string name="msg_personal_visit_date">Waktu Kunjungan</string>
+    <string name="msg_personal_visit_date_edit">Ubah waktu kunjungan</string>
+    <string name="msg_personal_doctor">Tenaga Medis</string>
+    <string name="msg_personal_doctor_edit">Ubah tenaga medis</string>
+    <string name="msg_personal_payment">Pembayaran</string>
+    <string name="msg_personal_payment_method">Metode Pembayaran</string>
+    <string name="msg_personal_payment_method_direct">Bayar Langsung</string>
+    <string name="msg_personal_payment_total">Biaya Kunjungan</string>
+    <string name="msg_empty_text_1">Maaf, dokter tidak tersedia berdasarkan waktu yang anda pilih</string>
+    <string name="msg_empty_text_2">Anda dapat coba menyesuaikan kembali tanggal dan jam kunjungan</string>
+    <string name="msg_empty_cart">Saat ini anda tidak memiliki pengajuan kunjungan dokter</string>
+    <string name="msg_visit">Kunjungan</string>
+    <string name="msg_visit_desc">Pada bagian ini anda dapat melihat daftar kunjungan yang sudah anda ajukkan</string>
+    <string name="msg_approval_inprogress">Dalam Proses</string>
+    <string name="msg_approval_finished">Selesai</string>
+    <string name="msg_approval_all">Semua</string>
+    <string name="msg_visit_info">Info Kunjungan</string>
+    <string name="msg_status_request">Status Pengajuan</string>
+    <string name="msg_visit_price">Biaya : %s /kunjungan</string>
+
+    <!-- err message-->
+    <string name="err_permission">Izin belum diberikan</string>
+    <string name="err_wrong_number">Salah nomor?</string>
+    <string name="err_reinput_number">Tolong isi nomor kembali</string>
+    <string name="err_info">Kesalahan Jaringan</string>
+    <string name="err_empty">Tolong Cek Kembali %s</string>
+
+    <!-- button message -->
+    <string name="bt_submit">Kirim</string>
+    <string name="bt_request_visit">Kirim Permintaan Kunjungan</string>
+    <string name="bt_save">Simpan</string>
+    <string name="bt_edit">Ubah</string>
+    <string name="bt_cancel">Batal</string>
+    <string name="bt_accept">Terima</string>
+    <string name="bt_agree">Setuju</string>
+    <string name="bt_reject">Tolak</string>
+    <string name="bt_resched">Atur Ulang</string>
+    <string name="bt_finish">Selesai</string>
+    <string name="bt_close">Tutup</string>
+    <string name="bt_yes">Ya</string>
+    <string name="bt_no">Tidak</string>
+    <string name="bt_logout">Keluar dari aplikasi</string>
+    <string name="bt_help">Bantuan</string>
+
+    <!--title fragment-->
+    <string name="title_detail">Detail Pengajuan</string>
+    <string name="title_request">Form Kunjungan</string>
+    <string name="title_schedule">Jadwal Dokter</string>
+
+    <!-- menu -->
+    <string name="menu_home">Beranda</string>
+    <string name="menu_visit">Kunjungan</string>
+    <string name="menu_history">Riwayat</string>
+    <string name="menu_profile">Profil</string>
+</resources>

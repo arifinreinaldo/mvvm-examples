@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/llGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingTop="@dimen/_24sdp"
+        android:paddingRight="@dimen/_16sdp">
+
+        <TextView
+            android:id="@+id/tvGreeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_profile"
+            android:textColor="@color/colorTitle"
+            android:textSize="@dimen/_22ssp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivWave"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_below="@id/llGreeting"
+        android:background="@drawable/bg_wave" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvParam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llGreeting"
+        android:layout_margin="@dimen/_16sdp"
+        card_view:cardCornerRadius="@dimen/_5sdp"
+        card_view:cardElevation="@dimen/_3sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tvFullName"
+                style="@style/TitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ivProfile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvFullName"
+                android:layout_toRightOf="@id/ivProfile"
+                android:text="@string/msg_personal_fullname"
+                android:textColor="@color/colorButton"
+                android:textSize="@dimen/_12ssp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cvParam">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp">
+
+            <TextView
+                style="@style/TitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cvParam"
+                android:text="@string/msg_personal_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_personal_birthdate"
+                android:textColor="@color/colorText" />
+
+            <TextView
+                android:id="@+id/tvBirthdate"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:enabled="false"
+                android:textColor="@color/colorText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="@string/msg_personal_gender" />
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvGender"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:enabled="false"
+                    android:text="@string/msg_personal_gender_m"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:enabled="false"
+                    android:text="@string/msg_personal_gender_f"
+                    android:textSize="@dimen/_14sdp" />
+            </RadioGroup>
+
+            <include layout="@layout/line_horizontal" />
+
+            <TextView
+                style="@style/TitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cvParam"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="@string/msg_personal_address" />
+
+            <TextView
+                android:id="@+id/tvAddressValue"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:enabled="false"
+                android:minHeight="@dimen/_30sdp" />
+
+            <include layout="@layout/line_horizontal" />
+
+            <Button
+                android:id="@+id/btLogout"
+                style="@style/ButtonDanger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/bt_logout"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

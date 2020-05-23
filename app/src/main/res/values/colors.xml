@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6f9a8d</color>
+    <color name="colorPrimaryDark">#1f6650</color>
+    <color name="colorAccent">#6f9a8d</color>
+    <color name="colorAccentLight">#eafbea</color>
+    <color name="colorInput">#f2f2f2</color>
+    <color name="colorInputBorder">#e0e0e0</color>
+    <color name="colorButton">#828282</color>
+    <color name="colorText">#1f1f1f</color>
+    <color name="colorTextButton">#FFFFFF</color>
+    <color name="colorTextInput">#1f6650</color>
+    <color name="colorTextAccent">#2f80ed</color>
+    <color name="colorTitle">#FFFFFF</color>
+    <color name="colorDanger">#f5426c</color>
+
+    <color name="colorAccentDark">#00F5C5</color>
+    <color name="colorAccentedText">#faeee7</color>
+    <color name="colorDisable">#d8d8d8</color>
+    <color name="colorRed">#FF324E</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorUnread">#969FAA</color>
+    <color name="colorRead">#FFFFFF</color>
+    <color name="colorDivider">#c4c4c4</color>
+</resources>

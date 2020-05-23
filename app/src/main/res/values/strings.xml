@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Homecare</string>
+    <string name="splash_version" translatable="false">Homecare for Patient v.%1s</string>
+
+    <!--message in screen-->
+    <string name="msg_login_info">We need to verify your phone number to provide you services</string>
+    <string name="msg_input_phone">ENTER PHONE NUMBER</string>
+    <string name="msg_verify">Verify</string>
+    <string name="msg_otp_info">Please enter the 6-digit activation code sent as SMS to %1s</string>
+    <string name="msg_otp_wait_confirm">Waiting Confirmation</string>
+    <string name="msg_otp_change_number">Do you want to change your number?</string>
+    <string name="msg_otp_resend">Resend Confirmation</string>
+    <string name="msg_resubmit">Resubmit in %02d:%02d</string>
+    <string name="msg_expired">Your token has expired \n Please Re-Login</string>
+    <string name="msg_morning">Good Morning,</string>
+    <string name="msg_profile">Profile</string>
+    <string name="msg_afternoon">Good Afternoon,</string>
+    <string name="msg_evening">Good Evening,</string>
+    <string name="msg_night">Good Night,</string>
+    <string name="msg_greeting">Please select date and time for our medical personnel to visit your location</string>
+    <string name="msg_visdat">Visit Date</string>
+    <string name="msg_vistim">Visit Time</string>
+    <string name="msg_hint_date">Pick Date</string>
+    <string name="msg_hint_time">Pick Time</string>
+    <string name="msg_find_doctor">Find Doctor</string>
+    <string name="msg_hint_src_doctor">Search doctor name in here</string>
+    <string name="msg_list_available_doctor">Lists of available doctors</string>
+    <string name="msg_search_desc">Filtered by date and hours selected</string>
+    <string name="msg_pop_doctor_title">Doctor Detail Information</string>
+    <string name="msg_pop_doctor_sympton">Handled Cases :</string>
+    <string name="msg_pop_doctor_request">Request Visit Schedule</string>
+    <string name="msg_personal_info">Personal Data</string>
+    <string name="msg_personal_fullname">Full Name</string>
+    <string name="msg_personal_birthdate">Birth Date</string>
+    <string name="msg_personal_gender">Gender</string>
+    <string name="msg_personal_gender_m">Male</string>
+    <string name="msg_personal_gender_f">Female</string>
+    <string name="msg_personal_address">Address </string>
+    <string name="msg_personal_address_note">Additional notes</string>
+    <string name="msg_personal_address_note_add">Add notes for address</string>
+    <string name="msg_personal_visit_date">Visit Schedule</string>
+    <string name="msg_personal_visit_date_edit">Change visit schedule</string>
+    <string name="msg_personal_doctor">Medical Personnel</string>
+    <string name="msg_personal_doctor_edit">Change medical personnel</string>
+    <string name="msg_personal_payment">Payment</string>
+    <string name="msg_personal_payment_method">Payment Method</string>
+    <string name="msg_personal_payment_method_direct">Direct Payment</string>
+    <string name="msg_personal_payment_total">Visit Fee</string>
+    <string name="msg_empty_text_1">Sorry, there is no doctor at selected time</string>
+    <string name="msg_empty_text_2">You can try to change visit date and time</string>
+    <string name="msg_empty_cart">You haven\'t requested any visit at the moment</string>
+    <string name="msg_visit">Visit</string>
+    <string name="msg_visit_desc">You can view your requested visit schedule here</string>
+    <string name="msg_approval_inprogress">In Progress</string>
+    <string name="msg_approval_finished">Finished</string>
+    <string name="msg_approval_all">All</string>
+    <string name="msg_visit_info">Visit Info</string>
+    <string name="msg_status_request">Request Status</string>
+    <string name="msg_visit_price">Fee : %s /Visit</string>
+
+    <!-- err message-->
+    <string name="err_permission">Permission has not been granted</string>
+    <string name="err_wrong_number">Wrong number?</string>
+    <string name="err_reinput_number">Please Re-Input Phone Number</string>
+    <string name="err_info">Network Error</string>
+    <string name="err_empty">Please Input %s</string>
+
+    <!-- button message -->
+    <string name="bt_submit">Submit</string>
+    <string name="bt_request_visit">Request Visit Schedule</string>
+    <string name="bt_save">Save</string>
+    <string name="bt_edit">Edit</string>
+    <string name="bt_cancel">Cancel</string>
+    <string name="bt_accept">Accept</string>
+    <string name="bt_agree">Agree</string>
+    <string name="bt_reject">Reject</string>
+    <string name="bt_finish">Finish</string>
+    <string name="bt_filter" translatable="false">Filter</string>
+    <string name="bt_resched">Reschedule</string>
+    <string name="bt_close">Close</string>
+    <string name="bt_reset" translatable="false">Reset</string>
+    <string name="bt_yes">Yes</string>
+    <string name="bt_no">No</string>
+    <string name="bt_logout">Log Out</string>
+    <string name="bt_help">Help</string>
+
+    <!-- menu -->
+    <string name="menu_home">Home</string>
+    <string name="menu_visit">Visit</string>
+    <string name="menu_history">History</string>
+    <string name="menu_profile">Profile</string>
+
+    <!--title fragment-->
+    <string name="title_detail">Request Detail</string>
+    <string name="title_request">Visit Detail</string>
+    <string name="title_schedule">Doctor Schedule</string>
+
+    <!-- no translate -->
+    <string name="country_code_indonesia" translatable="false">+62</string>
+    <string name="msg_filter" translatable="false">Filter</string>
+
+
+</resources>

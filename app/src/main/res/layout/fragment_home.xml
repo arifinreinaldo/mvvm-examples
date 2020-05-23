@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/llGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingTop="@dimen/_24sdp"
+        android:paddingRight="@dimen/_16sdp">
+
+        <TextView
+            android:id="@+id/tvGreeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_morning"
+            android:textColor="@color/colorTitle"
+            android:textSize="@dimen/_22ssp" />
+
+        <TextView
+            android:id="@+id/tvGreetings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_greeting"
+            android:textColor="@color/colorTitle"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_notification" />
+
+    <ImageView
+        android:id="@+id/ivWave"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_below="@id/llGreeting"
+        android:background="@drawable/bg_wave" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvParam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llGreeting"
+        android:layout_margin="@dimen/_16sdp"
+        card_view:cardCornerRadius="@dimen/_5sdp"
+        card_view:cardElevation="@dimen/_3sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:text="@string/msg_visdat" />
+
+                    <EditText
+                        android:id="@+id/etDate"
+                        style="@style/InputTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:drawableLeft="@drawable/ic_calendar"
+                        android:focusable="false"
+                        android:hint="@string/msg_hint_date"
+                        android:inputType="none"
+                        android:padding="@dimen/_5sdp"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:text="@string/msg_vistim" />
+
+                    <EditText
+                        android:id="@+id/etTime"
+                        style="@style/InputTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@id/tvDate"
+                        android:drawableLeft="@drawable/ic_clock"
+                        android:focusable="false"
+                        android:hint="@string/msg_hint_time"
+                        android:inputType="none"
+                        android:padding="@dimen/_5sdp"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btSearch"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:enabled="false"
+                android:text="@string/msg_find_doctor">
+
+            </Button>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
